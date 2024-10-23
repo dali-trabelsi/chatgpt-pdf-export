@@ -13,8 +13,6 @@ hideAllByClass("bg-token-sidebar-surface-primary", true);
 hideAllByClass("bg-token-main-surface-primary");
 hideAllByClass("gizmo-bot-avatar");
 hideAllByClass("rounded-xl");
-hideAllByClass("bg-[#f4f4f4]");
-hideAllByClass("text-base", false, "unset");
 
 // Fix code block overflow
 Array.from(document.getElementsByClassName("overflow-y-auto")).forEach(
@@ -31,6 +29,12 @@ if (composerParent && composerParent.children[1]) {
   composerParent.children[1].style.display = "none";
 }
 
-Array.from(document.all).forEach((x) => (x.style.overflow = "unset"));
+// hide my conv
+// hideAllByClass("bg-[#f4f4f4]");
+// hideAllByClass("text-base", false, "unset");
+
+Array.from(document.all).forEach((x) => {
+  x.style.height = "fit-content";
+});
 
 window.print();

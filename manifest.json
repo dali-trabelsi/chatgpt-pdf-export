@@ -4,10 +4,10 @@
   "version": "1.0",
   "description": "Cleans ChatGPT conversations and prepares them for PDF export.",
   "icons": {
-    "32": "icons/icon.png.png",
-    "16": "icons/icon.png.png",
-    "48": "icons/icon.png.png",
-    "128": "icons/icon.png.png"
+    "32": "icons/icon.png",
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
   },
   "permissions": ["activeTab", "scripting"],
   "host_permissions": ["https://chatgpt.com/*"],
@@ -17,6 +17,6 @@
   "action": {
     "default_popup": "popup.html",
     "default_title": "Export ChatGPT Conversation",
-    "default_icon": "icons/icon.png.png"
+    "default_icon": "icons/icon.png"
   }
 }
