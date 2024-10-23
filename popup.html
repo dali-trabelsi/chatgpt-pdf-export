@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChatGPT PDF Export</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        min-width: 250px;
+        min-height: 150px;
+        background-color: #f1f1f1;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #message {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      #cleanButton {
+        padding: 10px 20px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      #cleanButton:hover {
+        background-color: #0056b3;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">Preparing to export your ChatGPT conversation.</div>
+    <button id="cleanButton">Export to PDF</button>
+    <script src="popup.js"></script>
+  </body>
+</html>

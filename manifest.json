@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT PDF Export",
+  "version": "1.0",
+  "description": "Cleans ChatGPT conversations and prepares them for PDF export.",
+  "icons": {
+    "32": "icons/favicon-32x32.png",
+    "16": "icons/favicon-32x32.png",
+    "48": "icons/favicon-32x32.png",
+    "128": "icons/favicon-32x32.png"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://chatgpt.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Export ChatGPT Conversation",
+    "default_icon": "icons/favicon-32x32.png"
+  }
+}
