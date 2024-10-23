@@ -31,6 +31,6 @@ if (composerParent && composerParent.children[1]) {
   composerParent.children[1].style.display = "none";
 }
 
-Array.from(document.all).forEach((x) => (x.overflow = "unset"));
+Array.from(document.all).forEach((x) => (x.style.overflow = "unset"));
 
 window.print();
